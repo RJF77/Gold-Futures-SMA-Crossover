@@ -56,7 +56,7 @@ Fixed volume with no position sizing logic
 No walk-forward testing or out-of-sample validation
 
 # Author
-Ryan James Forrester - BA Economics and Finance,
+Ryan James Forrester - 1st Year BA Economics and Finance Student,
 Leeds Beckett University
 https://www.linkedin.com/in/ryan-forrester-708837303/
 
