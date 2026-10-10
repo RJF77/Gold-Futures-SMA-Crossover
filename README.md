@@ -2,7 +2,7 @@
 
 A systematic backtesting framework for a dual simple moving average crossover strategy on Gold Futures (GC=F), implemented in Python.
 
-# Strategey Overview
+# Strategy Overview
 
 The strategy uses two SMAs on 1-hour closing prices to generate long entries and exits:
 
@@ -30,14 +30,14 @@ The backtest is built around two classes:
 Position — represents a single trade, tracking open/close prices, datetime, volume, and profit. P&L is calculated as (close_price - open_price) * volume for long trades.
 Strategy — iterates over the full dataset bar by bar. On a bearish crossover, any open position is closed at the current close. On a bullish crossover, a new long position is opened. Returns a full trade log as a DataFrame with a cumulative PnL column.
 
-# Visulisations
+# Visualisations
 The notebook produces two charts using Plotly:
 
 Price chart — 1H close price with SMA(10) and SMA(100) overlaid, vertical lines marking each entry signal, and green lines connecting open to close price for each profitable trade
 PnL curve — cumulative profit/loss over the backtest period
 
 # Requirements
-yfinace
+yfinance
 pandas
 numpy
 plotly
